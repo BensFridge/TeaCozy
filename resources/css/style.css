@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  justify-content: center;
+}
+
+/* NOTE: Start of Header */
+a {
+  color: seashell;
+  text-decoration: underline;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+li {
+  margin: 0 20px;
+}
+
+#header {
+  display: flex;
+  z-index: 1;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  position: fixed;
+  height: 69px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+/* NOTE: Start of Body Css Section 1*/
+
+#mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 70px;
+}
+
+.mission-background img {
+  height: 700px;
+  z-index: -1;
+}
+
+.mission-text {
+  position: absolute;
+  background-color: black;
+  width: 1200px;
+}
+
+.mission-text h2,
+.mission-text h4 {
+  display: flex;
+  justify-content: center;
+}
+
+/* NOTE: Start of Section 2 */
