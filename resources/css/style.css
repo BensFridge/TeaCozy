@@ -46,16 +46,21 @@ li {
 
 /* NOTE: Start of Body Css Section 1*/
 
+#content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 70px;
+}
+
 #mission {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 70px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 500px;
+  height: 700px;
 }
 
 .mission-text {
@@ -73,10 +78,8 @@ li {
 /* NOTE: Start of Section 2 */
 
 #tea-month {
-  position: relative;
-  top: 125px;
   width: 1000px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .tea-text {
@@ -100,7 +103,6 @@ li {
 .donut h4,
 .myrtle h4,
 .bedford h4 {
-  text-align: center;
   margin: 10px auto;
 }
 
@@ -110,6 +112,7 @@ li {
 .myrtle,
 .bedford {
   margin: 15px 15px;
+  text-align: center;
 }
 
 /* NOTE: Start of Section 3 */
@@ -118,8 +121,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 225px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -146,9 +147,9 @@ li {
 .e-bayside,
 .oakdale {
   background-color: black;
-  width: 300px;
+  width: 320px;
   opacity: 1;
-  margin: 15px 20px;
+  margin: 0px 20px;
 }
 
 .downtown ul,
@@ -160,5 +161,34 @@ li {
 .downtown li,
 .e-bayside li,
 .oakdale li {
-  margin: 40px 40px;
+  margin: 40px auto;
+}
+
+/* NOTE: Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: 75px;
+}
+
+.footer-content {
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+.footer-info,
+.footer-head {
+  text-align: center;
+}
+
+
+.footer-info h5 {
+  margin: 40px 15px;
+}
+
+.copyright {
+  margin: 30px 20px;
 }
