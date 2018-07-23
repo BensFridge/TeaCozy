@@ -1,11 +1,10 @@
 body {
-  display: flex;
+  display: block;
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
   opacity: 0.9;
-  justify-content: center;
 }
 
 /* NOTE: Start of Header */
@@ -25,7 +24,7 @@ li {
   margin: 0 20px;
 }
 
-#header {
+.header {
   display: flex;
   z-index: 1;
   border-bottom: 1px solid seashell;
@@ -53,11 +52,10 @@ li {
   align-items: center;
   position: relative;
   top: 70px;
-}
-
-.mission-background img {
-  height: 700px;
-  z-index: -1;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
 }
 
 .mission-text {
@@ -73,3 +71,94 @@ li {
 }
 
 /* NOTE: Start of Section 2 */
+
+#tea-month {
+  position: relative;
+  top: 125px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.tea-text {
+  text-align: center;
+}
+
+.tea-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tea-images img {
+  width: 300px;
+  height: 200px;
+}
+
+.berryblitz h4,
+.spicedrum h4,
+.donut h4,
+.myrtle h4,
+.bedford h4 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.berryblitz,
+.spicedrum,
+.donut,
+.myrtle,
+.bedford {
+  margin: 15px 15px;
+}
+
+/* NOTE: Start of Section 3 */
+
+#locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 225px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+
+.content-locations {
+  display: block;
+}
+
+.location-heading h2 {
+  margin: 15px auto;
+  text-align: center;
+}
+
+.location-text {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+}
+
+.downtown,
+.e-bayside,
+.oakdale {
+  background-color: black;
+  width: 300px;
+  opacity: 1;
+  margin: 15px 20px;
+}
+
+.downtown ul,
+.e-bayside ul,
+.oakdale ul {
+  display: block;
+}
+
+.downtown li,
+.e-bayside li,
+.oakdale li {
+  margin: 40px 40px;
+}
